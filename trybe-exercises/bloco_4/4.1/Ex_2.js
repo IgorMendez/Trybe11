@@ -5,4 +5,4 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let sum = numbers.reduce(function (sumArr, num) {
   return sumArr + num;
 })
-console.log(sum)
+console.log(sum);

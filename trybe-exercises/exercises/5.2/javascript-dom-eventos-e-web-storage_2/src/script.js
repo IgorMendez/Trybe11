@@ -3,6 +3,7 @@ const bodyElement = document.body;
 const criarH1 = document.createElement('h1');
 bodyElement.appendChild(criarH1);
 criarH1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+criarH1.classList.add('title');
 
 const mainContent = document.createElement('div');
 bodyElement.appendChild(mainContent);
@@ -40,5 +41,6 @@ rightContent.appendChild(list);
   for (let index = 0; index < 3; index++) {
     let h3 = document.createElement('h3');
     mainContent.appendChild(h3);
+    h3.classList.add('description')
   }
 }());

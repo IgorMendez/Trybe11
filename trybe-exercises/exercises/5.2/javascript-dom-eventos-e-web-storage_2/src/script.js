@@ -23,3 +23,8 @@ leftContent.classList.add('left-content')
 const rightContent = document.createElement('div')
 mainContent.appendChild(rightContent)
 rightContent.classList.add('right-content')
+
+const smallImage = document.createElement('img')
+leftContent.appendChild(smallImage)
+smallImage.src = 'https://picsum.photos/200'
+smallImage.classList.add('small-image')

@@ -20,6 +20,7 @@ criaP.innerHTML = 'Aprendendo a aprender';
 const leftContent = document.createElement('div');
 mainContent.appendChild(leftContent);
 leftContent.classList.add('left-content');
+mainContent.removeChild(leftContent);
 
 const rightContent = document.createElement('div');
 mainContent.appendChild(rightContent);
@@ -41,6 +42,6 @@ rightContent.appendChild(list);
   for (let index = 0; index < 3; index++) {
     let h3 = document.createElement('h3');
     mainContent.appendChild(h3);
-    h3.classList.add('description')
+    h3.classList.add('description');
   }
 }());

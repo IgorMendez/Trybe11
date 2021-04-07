@@ -36,15 +36,17 @@ smallImage.classList.add('small-image');
 const list = document.createElement('ul');
 rightContent.appendChild(list);
 
-
 (function createLi(x) {
-  for (let index = 0; index < 10; index++) {
+  for (let index = 0; index < 10; index += 1) {
     let item = document.createElement('li');
     list.appendChild(item);
   }
-  for (let index = 0; index < 3; index++) {
+  for (let index = 0; index < 3; index += 1) {
     let h3 = document.createElement('h3');
     mainContent.appendChild(h3);
     h3.classList.add('description');
+  }
+  for (let index = 0; index < 2; index += 1) {
+    list.removeChild(list.lastChild);
   }
 }());

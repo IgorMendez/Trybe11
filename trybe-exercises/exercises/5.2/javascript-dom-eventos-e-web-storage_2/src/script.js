@@ -7,3 +7,7 @@ criarH1.innerHTML = "Exercício 5.2 - JavaScript DOM";
 const criaDiv = document.createElement('div');
 bodyElement.appendChild(criaDiv);
 criaDiv.classList.add('main-content');
+
+const criaDiv2 = document.createElement('div');
+criaDiv.appendChild(criaDiv2);
+criaDiv2.classList.add('center-content');

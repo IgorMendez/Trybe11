@@ -8,6 +8,7 @@ criarH1.classList.add('title');
 const mainContent = document.createElement('div');
 bodyElement.appendChild(mainContent);
 mainContent.classList.add('main-content');
+mainContent.setAttribute('style', 'background-color: green;');
 
 const centerContent = document.createElement('div');
 mainContent.appendChild(centerContent);

@@ -37,4 +37,8 @@ rightContent.appendChild(list);
     let item = document.createElement('li');
     list.appendChild(item);
   }
+  for (let index = 0; index < 3; index++) {
+    let h3 = document.createElement('h3');
+    mainContent.appendChild(h3);
+  }
 }());

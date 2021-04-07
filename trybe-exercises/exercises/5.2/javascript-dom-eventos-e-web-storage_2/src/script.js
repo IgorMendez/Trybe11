@@ -20,3 +20,6 @@ const leftContent = document.createElement('div')
 mainContent.appendChild(leftContent)
 leftContent.classList.add('left-content')
 
+const rightContent = document.createElement('div')
+mainContent.appendChild(rightContent)
+rightContent.classList.add('right-content')

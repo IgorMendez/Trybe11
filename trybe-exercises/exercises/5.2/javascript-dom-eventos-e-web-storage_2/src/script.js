@@ -25,6 +25,7 @@ mainContent.removeChild(leftContent);
 const rightContent = document.createElement('div');
 mainContent.appendChild(rightContent);
 rightContent.classList.add('right-content');
+rightContent.setAttribute('style', 'margin-right: auto')
 
 const smallImage = document.createElement('img');
 leftContent.appendChild(smallImage);
@@ -33,6 +34,7 @@ smallImage.classList.add('small-image');
 
 const list = document.createElement('ul');
 rightContent.appendChild(list);
+
 
 (function createLi(x) {
   for (let index = 0; index < 10; index++) {

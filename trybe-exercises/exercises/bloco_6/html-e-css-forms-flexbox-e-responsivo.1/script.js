@@ -1,4 +1,8 @@
 const selectState = document.getElementById('select-state')
+const selectForms = document.getElementById('form-container')
+const getSubmitButtom = document.getElementById('submit-button')
+const getDiv = document.getElementById('dados')
+
 
 let estados = {   'AC': 'Acre',
 'AL': 'Alagoas',
@@ -29,10 +33,28 @@ let estados = {   'AC': 'Acre',
 'TO': 'Tocantins'
 }
 
-// console.log(Object.values(estados))
+// Functions
+
+function clearDiv() {
+  getDiv.innerHTML = ''
+}
+
+getSubmitButtom.addEventListener('click', submitButton)
+function submitButton(event) {
+  event.preventDefault()
+  clearDiv()
+
+  const newData = new FormData(selectForms)
+  for(index of newData.entries()) {
+    const createParagraph = document.createElement('p')
+    getDiv.appendChild(createParagraph)
+    createParagraph.innerText = index[1]
+  }
+  
+}
+
 
 function createState() {
-  
   for (let index = 0; index < 27; index += 1) {
     const createOption = document.createElement('option')
     selectState.appendChild(createOption)
@@ -42,6 +64,5 @@ function createState() {
 }
 
 window.onload = function() {
-  //preventDefault() 
   createState()
 }

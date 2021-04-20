@@ -1,0 +1,13 @@
+.body {
+  margin: 0;
+}
+
+.completed {
+  text-decoration: line-through  black solid;
+}
+
+#lista-tarefas > li {
+  font-family: cursive;
+  cursor: crosshair;
+  user-select: none;
+}

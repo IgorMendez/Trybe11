@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+#titulo {
+  color: aliceblue;
+}
+
+#cabecalho {
+  position: fixed;
+  border: 10px;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  background-color: olive;
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 50px;
+  top: 0;
+}
+
+#menu-nav {
+  border-color: green;
+  border: 10px;
+  left: 50%;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  padding: 50px;
+}
+
+.button-nav {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#minha_foto {
+  border-width: 10px;
+  border-radius: 50%;
+  width: 20%;
+  padding: 135px 35% 0;
+}
+
+table {
+  background-color: azure;
+  font-family: cursive;
+}
+
+#lado-esquerdo {
+  border: solid;
+  float: left;
+  position: relative;
+  width: auto;
+  padding: 10px 20px;
+}
+
+#lado-direito {
+  border: solid;
+  float: right;
+  width: 50%;
+  height: 200px;
+  padding: 10px 20px;
+}
+
+#aside {
+  border: solid;
+  display: inline-block;
+  margin: 5%;
+}

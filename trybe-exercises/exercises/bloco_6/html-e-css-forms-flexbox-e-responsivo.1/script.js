@@ -42,5 +42,6 @@ function createState() {
 }
 
 window.onload = function() {
+  preventDefault() 
   createState()
 }

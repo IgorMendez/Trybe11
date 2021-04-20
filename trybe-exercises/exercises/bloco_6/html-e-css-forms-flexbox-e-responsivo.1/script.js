@@ -29,7 +29,7 @@ let estados = {   'AC': 'Acre',
 'TO': 'Tocantins'
 }
 
-console.log(Object.values(estados))
+// console.log(Object.values(estados))
 
 function createState() {
   
@@ -42,6 +42,6 @@ function createState() {
 }
 
 window.onload = function() {
-  preventDefault() 
+  //preventDefault() 
   createState()
 }

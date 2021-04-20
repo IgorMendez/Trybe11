@@ -10,62 +10,87 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form id="form-container">
+    <h1 class="display-4 text-muted">Formulário de currículo</h1>
+    <form id="form-container" method="GET">
         <fieldset id="form1" name="forms">
-            <label class ="form-box" for="full-name">Nome:
-                <input maxlength="40" type="text" name="name" id="full-name" placeholder="Digite Seu nome">
-            </label>
+            <div class="form-group">
+                <label for="full-name">Nome:
+                    <input  class="form-control" maxlength="40" type="text" name="name" id="full-name" placeholder="Digite Seu nome">
+                </label>
+            </div>
             
-            <label class ="form-box" for="e-mail">Email:
-                <input maxlength="50" type="email" name="email" id="e-mail" placeholder="Digite seu Email">
-            </label>
-
-            <label class ="form-box" for="cpf-client">CPF:
-                <input maxlength="11" type="text" name="cpf" id="cpf-client" placeholder="Digite seu CPF">
-            </label>
-
-            <label class ="form-box" class ="form-box" for="full-adress">Endereço:
-                <input maxlength="200" type="text" name="adress" id="full-adress" placeholder="Rua / Número /">
-            </label>
-
-            <label class ="form-box" for="city">Cidade:
-                <input  maxlength="28" type="text" name="city" id="city" placeholder="Cidade">
-            </label>
-
-            <label class ="form-box" for="select-state">Estado:
-                <select name="select" id="select-state"></select>
-            </label>
-
-            <fieldset class ="form-box" id="radio-form">Tipo:
-                <label for="house">
-                    <input type="radio" name="home" id="house" value="house">Casa
+            <div class="form-group">
+                <label for="e-mail">Email:
+                    <input  class="form-control" maxlength="50" type="email" name="email" id="e-mail" placeholder="Digite seu Email">
                 </label>
+            </div>
 
-                <label for="apartament">
-                    <input type="radio" name="home" id="apartament" value="apartament">Apartamento
+            <div class="form-group">
+                <label for="cpf-client">CPF:
+                    <input  class="form-control" maxlength="11" type="text" name="cpf" id="cpf-client" placeholder="Digite seu CPF">
                 </label>
+            </div>
+
+            <div class="form-group">
+                <label for="full-adress">Endereço:
+                    <input  class="form-control" maxlength="200" type="text" name="adress" id="full-adress" placeholder="Rua / Número /">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Cidade:
+                    <input  class="form-control"  maxlength="28" type="text" name="city" id="city" placeholder="Cidade">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="select-state">Estado:
+                    <select class="form-control" name="select" id="select-state"></select>
+                </label>
+            </div>
+
+            <fieldset id="radio-form">Tipo:
+                <div class="form-group">
+                    <label for="house">
+                        <input  class="form-control" type="radio" name="home" id="house" value="house">Casa
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="apartament">
+                        <input  class="form-control" type="radio" name="home" id="apartament" value="apartament">Apartamento
+                    </label>
+                </div>
             </fieldset>
         </fieldset>
         <fieldset id="form2" name="forms">
-            <label class ="form-box" for="curriculo">Resumo do Currículo:
-                <textarea maxlength="1000" name="curriculo" id="curriculo" cols="50" rows="10"></textarea>
-            </label>
+            <div class="form-group">
+                <label id="text-area" for="curriculo">Resumo do Currículo:
+                    <textarea maxlength="1000" name="curriculo" id="curriculo" cols="50" rows="10"></textarea>
+                </label>
+            </div>
 
-            <label class ="form-box" for="ocupation">Cargo:
-                <input type="text" id="ocupation" name="ocupation">
-            </label>
+            <div class="form-group">
+                <label for="ocupation">Cargo:
+                    <input  class="form-control" type="text" id="ocupation" name="ocupation">
+                </label>
+            </div>
 
-            <label class ="form-box" for="ocupation-description">Descrição do cargo:
-                <input type="text" id="ocupation-description" name="ocupation-description">
-            </label>
+            <div class="form-group">
+                <label for="ocupation-description">Descrição do cargo:
+                    <input  class="form-control" type="text" id="ocupation-description" name="ocupation-description">
+                </label>
+            </div>
 
-            <label class ="form-box" for="start-date">Data de iníncio:
-                <input type="date" name="startdate" id="start-date">
-            </label>
+            <div class="form-group">
+                <label for="start-date">Data de iníncio:
+                    <input  class="form-control" type="date" name="startdate" id="start-date">
+                </label>
+            </div>
         </fieldset>
-        <fieldset id="buttom-field">
-            <button class ="form-box" type="submit">Enviar</button>
-            <button class ="form-box" type="reset">Limpar Formulário</button>
+        <fieldset id="buttom-field"> 
+            <button class="btn btn-success" type="submit">Enviar</button>
+            <button class="btn btn-danger" type="reset">impar Formulário</button>
         </fieldset> 
     </form>
 

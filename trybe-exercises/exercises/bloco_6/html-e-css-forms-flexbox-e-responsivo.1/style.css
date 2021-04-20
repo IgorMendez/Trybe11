@@ -6,6 +6,10 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
+h1 {
+  text-align: center;
+}
+
 #form1, #form2, #buttom-field {
   width: 50%;
 }

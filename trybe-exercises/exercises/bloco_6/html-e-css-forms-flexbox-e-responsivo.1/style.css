@@ -6,7 +6,7 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
-#form1 {
+#form1, #form2, #buttom-field {
   width: 50%;
   margin: auto;
   display: flex;

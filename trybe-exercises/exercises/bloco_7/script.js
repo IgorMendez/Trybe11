@@ -29,3 +29,9 @@ console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescen
 const fac = (n) => n === 0 ? n = 1 : n * fac (n - 1);
 
 console.log(fac(3))
+
+// Exercício 2
+// Ajuda do Rodrigo Ruan Souza Havaiana
+const longestWord = (string) => {return String(string.split(' ').filter(c=>c.length === (string.split(' ').map((e,i,a) => a[i].length).reduce((a,b)=> Math.max(a,b)))));
+}
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) 

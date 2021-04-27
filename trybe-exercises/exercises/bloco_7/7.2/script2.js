@@ -30,3 +30,8 @@ console.log(lesson2)
 
 const listKeys = (obj) => Object.keys(obj)
 console.log(listKeys(lesson3))
+
+// Exercicío 3
+
+const objLength = (obj) => Object.keys(obj).length
+console.log(objLength(lesson3))

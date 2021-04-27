@@ -51,7 +51,11 @@ objAssing(allLessons, {lesson1, lesson2, lesson3})
 
 // Exercício 6
 
-const sumStudents = (obj) => Object.values(obj).map(_=>Object.values(_).join(',').split(',')).map(_=>_[1]).reduce((a,b)=>parseInt(a)+parseInt(b))
+const sumStudents=_=>Object.values(_).map(_=>Object.values(_)[1]).reduce((a,b)=>a+b)
 
 console.log(sumStudents(allLessons))
+
+// Exercício 7
+
+
 

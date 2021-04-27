@@ -1,4 +1,4 @@
-// Parte 1
+  // Parte 1
 
 // Exercício 1
 
@@ -15,8 +15,10 @@ const testingScope = (escopo) => {
 testingScope(true);
 
 // 'Exercício 2'
+const oddsAndEvens = ['fdsadsads', 3, 4, 10, 7, 2];
+console.log(oddsAndEvens.map((e,i)=>e.length))
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
 
 oddsAndEvens.sort((a, b) => a - b)
 
@@ -35,3 +37,5 @@ console.log(fac(3))
 const longestWord = (string) => {return String(string.split(' ').filter(c=>c.length === (string.split(' ').map((e,i,a) => a[i].length).reduce((a,b)=> Math.max(a,b)))));
 }
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")) 
+
+

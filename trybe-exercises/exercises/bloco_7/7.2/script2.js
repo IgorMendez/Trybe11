@@ -57,5 +57,7 @@ console.log(sumStudents(allLessons))
 
 // Exercício 7
 
+const includeKey = (obj,key,value1) => obj[key] === value1
 
+// console.log(includeKey(lesson1, 'materia', 'Matemática'))
 

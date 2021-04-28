@@ -53,18 +53,18 @@ objAssing(allLessons, {lesson1, lesson2, lesson3})
 
 const sumStudents=_=>Object.values(_).map(_=>Object.values(_)[1]).reduce((a,b)=>a+b)
 
-// console.log(sumStudents(allLessons))
+console.log(sumStudents(allLessons))
 
 // Exercício 7
 
 const includeKey = (obj,key,value1) => obj[key] === value1
 
-// console.log(includeKey(lesson1, 'materia', 'Matemática'))
+console.log(includeKey(lesson1, 'materia', 'Matemática'))
 
 // Exercício 8
 
 const arr = []
 const countStudents = obj => Object.values(obj).filter(e=>e.materia === 'Matemática').reduce((a,b)=>a.numeroEstudantes+b.numeroEstudantes)
 
-console.log(countStudents(allLessons))
+// console.log(countStudents(allLessons))
 

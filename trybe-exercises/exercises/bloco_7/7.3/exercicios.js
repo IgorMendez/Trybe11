@@ -40,5 +40,10 @@ let expected = myRemove([1, 2, 3, 4], 3)
 
 // Exercício 2
 
-assert.notDeepStrictEqual(expected ,[1, 2, 3, 4] , 'erro')
+// assert.notDeepStrictEqual(expected ,[1, 2, 3, 4] , 'erro')
+
+// Exercício 3
+
+assert.ok(expected ,[1, 2, 3, 4] )
+
 

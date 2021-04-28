@@ -71,4 +71,8 @@ let expected = myRemoveWithoutCopy([1, 2, 3, 4], 3)
 
 assert.deepStrictEqual(expected, [1, 2, 4])
 
+// // Exercício 2 
+
+assert.deepStrictEqual(expected, [1, 2, 3, 4])
+
 

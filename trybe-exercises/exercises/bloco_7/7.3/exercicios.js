@@ -34,7 +34,7 @@ function myRemove(arr, item) {
   return newArr;
 }
 
-let expected = myRemove([1, 2, 3, 4], 3)
+let expected = myRemove([1, 2, 3, 4], 3);
 
 // assert.deepStrictEqual(expected ,[1 ,2 ,4] , 'erro')
 
@@ -44,6 +44,6 @@ let expected = myRemove([1, 2, 3, 4], 3)
 
 // Exercício 3
 
-assert.ok(expected ,[1, 2, 3, 4] )
+assert.ok(expected ,[1, 2, 3, 4] );
 
 

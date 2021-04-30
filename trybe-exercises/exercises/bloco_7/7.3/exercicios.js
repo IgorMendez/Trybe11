@@ -55,19 +55,19 @@ const assert = require('assert');
 
 
 
-function myRemoveWithoutCopy(arr, item) {
-  for (let index = 0, len = arr.length; index < len; index += 1) {
-    if (arr[index] === item) {
-      arr.splice(index, 1);
-      index -= 1;
-      len -= 1;
-    }
-  }
+// function myRemoveWithoutCopy(arr, item) {
+//   for (let index = 0, len = arr.length; index < len; index += 1) {
+//     if (arr[index] === item) {
+//       arr.splice(index, 1);
+//       index -= 1;
+//       len -= 1;
+//     }
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
-let expected = myRemoveWithoutCopy([1, 2, 3, 4], 3)
+// let expected = myRemoveWithoutCopy([1, 2, 3, 4], 3)
 
 // assert.deepStrictEqual(expected, [1, 2, 4])
 
@@ -77,4 +77,18 @@ let expected = myRemoveWithoutCopy([1, 2, 3, 4], 3)
 
 // // EXercício 3, 4
 
-assert.strictEqual(expected, [1, 2, 4])
+// assert.strictEqual(expected, [1, 2, 4])
+
+
+// // Parte IV
+// // Exercício 1
+
+const assert = require('assert');
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}

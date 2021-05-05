@@ -65,7 +65,9 @@ const books = [
 const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-  return books.map((e,i,a)=>e.author.name.split('').filter(e=> e === '.')).map((e,i)=> e[e])
+  return books.find((e) => {
+    return e.author.name.split('').filter(e => e === '.').length === 3
+  }).name
 }
 
 // 

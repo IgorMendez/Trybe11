@@ -64,16 +64,31 @@ const books = [
 ];
 
 const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  {
+    id: 6,
+    name: 'O Chamado de Cthulhu',
+    genre: 'Terror',
+    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+    releaseYear: 1928,
+  },
+  {
+    id: 3,
+    name: 'Fundação',
+    genre: 'Ficção Científica',
+    author: { name: 'Isaac Asimov', birthYear: 1920 },
+    releaseYear: 1951,
+  },
+  {
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+    releaseYear: 1954,
+  },
 ];
 
-function formatedBookNames() {
-  return books.map((e) => `${e.name} - ${e.genre} - ${e.author.name}`)
+function oldBooks() {
+  return books.filter((e) => 2021 - e.releaseYear > 60).sort((a, b) => a.releaseYear - b.releaseYear)
 }
 
-assert.deepStrictEqual(formatedBookNames(), expectedResult);
+assert.deepStrictEqual(oldBooks(), expectedResult);

@@ -62,18 +62,17 @@ const books = [
     releaseYear: 1928,
   },
 ];
+const expectedResult = 'O Senhor dos Anéis';
 
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
-
-function formatedBookNames() {
-  return books.map((e) => `${e.name} - ${e.genre} - ${e.author.name}`)
+function authorWith3DotsOnName() {
+  return books.find((e) => {
+    return e.author.name.split('').filter(e => e === '.').length === 3
+  }).name
 }
 
-assert.deepStrictEqual(formatedBookNames(), expectedResult);
+// 
+
+console.log(authorWith3DotsOnName());
+
+
+// assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);

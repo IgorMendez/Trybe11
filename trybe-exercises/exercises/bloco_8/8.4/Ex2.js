@@ -62,17 +62,9 @@ const books = [
     releaseYear: 1928,
   },
 ];
-const expectedResult = 'O Senhor dos Anéis';
 
-function authorWith3DotsOnName() {
-  return books.filter((e) => {
-    return e.author.name.split('').filter(e => e === '.').length === 3
-  })
+function allNames() {
+  // escreva seu código aqui
 }
 
-// 
-
-console.log(authorWith3DotsOnName());
-
-
-// assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');

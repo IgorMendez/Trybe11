@@ -1,15 +1,11 @@
-// apiScript.js
-const API_URL = 'https://icanhazdadjoke.com/';
+const species = {}
+const arr = ['a', 'b', 'c', 'd']
 
-const fetchJoke = () => {
-  const myObject = {
-    method: 'GET',
-    headers: { 'Accept': 'application/json' }
-  };
+function getSpeciesByIds(...ids) {
 
-  fetch(API_URL, myObject)
-  .then((r) => r.json())
-  .then((r) => document.getElementById('jokeContainer').innerText = r.joke)
-};
+return ids.forEach((e) => console.log(e))
 
-window.onload = () => fetchJoke();
+
+} 
+
+console.log(getSpeciesByIds('a', 'b', 'c', 'd'))

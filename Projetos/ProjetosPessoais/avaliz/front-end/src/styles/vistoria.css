@@ -1,0 +1,1191 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+:root {
+  --color1: #2eafac;
+  --color2: #196864;
+  --color3: #3d3d3d;
+  --color4: #c8ea00;
+  --color5: #b5b5b5;
+  --color6: #84c5c1;
+  --color7: #233f3e;
+  --color8: #ededed;
+  --color9: #f2f2f2;
+  --color10: #ededed;
+  --color11: #e3e3e3;
+  --font-main: 'Barlow';
+}
+
+* {
+  font-family: var(--font-main);
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color8);
+}
+
+hr {
+  border: none;
+  background-color: var(--color4);
+  color: var(--color4);
+}
+
+#mais-info-address,
+#mais-info-veiculos {
+  resize: none;
+  border: none;
+}
+
+.tituloFormulario {
+  font-weight: 700;
+  width: initial;
+  color: var(--color1);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#steps-bar > p {
+  height: 50px;
+}
+
+.step-0,
+.step-1,
+.step-2,
+.step-3,
+.step-4,
+.step-5 {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.step-0 {
+  background: url('../media/steps.png') 0px 0px;
+}
+
+.step-1 {
+  background: url('../media/steps.png') 0px -44px;
+}
+
+.step-2 {
+  background: url('../media/steps.png') 0px -88px;
+}
+
+.step-3 {
+  background: url('../media/steps.png') 0px -142px;
+}
+
+.step-5 {
+  background: url('../media/steps.png') 0px -186px;
+}
+
+.clientData,
+.vehiclesForm,
+.dataAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extract-summary-container,
+.total {
+  background-color: #ffffff;
+}
+
+.animation-container {
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bottom-buttons-container {
+  position: sticky;
+  display: flex;
+}
+
+/* Tela Mobile */
+@media screen and (max-width: 449px) {
+  .extract-container-step-bar {
+    display: none;
+  }
+
+  #justify-rigth {
+    text-align: left;
+  }
+
+  .extract-summary-container {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  #logoPrincipal {
+    height: 23px;
+  }
+
+  .tituloFormulario {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  hr {
+    width: 179.04px;
+    height: 2px;
+    margin: 8px 0 20px 0;
+  }
+
+  .components-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clientData,
+  .vehiclesForm,
+  .dataAddress,
+  .perguntaResponsavelServico {
+    width: 93%;
+  }
+
+  #steps-bar {
+    overflow: auto;
+  }
+
+  #steps-bar > p {
+    width: 449px;
+  }
+
+  .inputModeloEscrever {
+    width: 100%;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscrever::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  .inputModeloEscreverSelect {
+    background-color: rgb(255, 255, 255);
+    padding: 2px 0;
+    color: #727171;
+    width: 348px;
+    height: 37px;
+  }
+
+  .inputModeloEscreverNo {
+    width: 100%;
+    max-width: 346px;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscreverNo::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  #Name,
+  #nameRecived {
+    background-image: url('../media/User.svg');
+  }
+
+  #Phone,
+  #phoneRecived {
+    background-image: url('../media/Cell\ Phone.svg');
+  }
+
+  #cpfCnpj {
+    background-image: url('../media/Name\ Tag\ Woman\ Horizontal.svg');
+  }
+
+  #Email {
+    background-image: url('../media/Secured\ Letter.svg');
+  }
+
+  #placa {
+    background-image: url('../media/ABC.svg');
+  }
+
+  #price {
+    background-image: url('../media/Cheap\ 2.svg');
+  }
+
+  #brand {
+    background-image: url('../media/Steering\ Wheel.svg');
+  }
+
+  #modelCar {
+    background-image: url('../media/Carpool.svg');
+  }
+
+  #yearCar {
+    background-image: url('../media/2017.svg');
+  }
+  #cep {
+    background-image: url('../media/Search.svg');
+  }
+
+  #sameClient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sameClient > p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  #sameClient > div {
+    width: 100%;
+    padding-top: 14px;
+  }
+
+  #sameClient > div > span {
+    margin: auto 20px 0 0;
+    color: var(--color3);
+  }
+  #sameClient #yes {
+    background-color: red;
+  }
+
+  .bottom-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+    width: 346px;
+    gap: 30px;
+  }
+
+  .bottom-buttons-container button {
+    height: 35px;
+    width: 210px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+
+  .bottom-buttons-container button:disabled {
+    background-color: var(--color11);
+    background-color: #b5b5b5;
+  }
+
+  .next-step {
+    background-color: var(--color1);
+    color: var(--color10);
+  }
+  .back-step {
+    background-color: var(--color11);
+    color: var(--color5);
+  }
+
+  .platePrice {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .platePrice input {
+    width: 100%;
+    max-width: 158px;
+  }
+
+  .fipe-container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fipe-container select {
+    width: 100%;
+    color: #727171;
+
+    max-width: 346px;
+  }
+
+  #accept-terms {
+    font-size: 13px;
+  }
+
+  .obsTextArea {
+    width: 100%;
+    max-width: 410px;
+    border: solid 1px var(--color10);
+    box-sizing: border-box;
+    height: 70px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .obsTextArea2 {
+    height: 191px;
+    width: 100%;
+    max-width: 368px;
+    text-align: center;
+    resize: none;
+    border: none;
+  }
+
+  .serviceTerms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .camposDivididos {
+    display: flex;
+    width: 100%;
+    max-width: 346px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .whithoutIndent {
+    text-indent: 10px;
+  }
+
+  .moreInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .extract-summary-container {
+    width: 346px;
+    border: 1px solid var(--color10);
+    border-radius: 3px;
+    padding: 25px 10px;
+  }
+
+  .extract-summary-container div span {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extract-summary-container div span em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .extract-summary-container div span strong,
+  .extract-summary-container div ul {
+    color: var(--color5);
+  }
+  .total {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 346px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color1);
+    border: 1px solid var(--color10);
+    border-radius: 3px;
+    padding: 15px 10px;
+  }
+
+  .total em {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .yes-no-container {
+    font-size: 12px;
+    text-align: initial;
+  }
+
+  .fixed-div {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  input[name='Hora'],
+  input[name='Data'] {
+    width: 160px;
+    box-sizing: border-box;
+  }
+}
+/* Fim Mobile */
+
+/* Tela Tablet */
+@media screen and (max-width: 1017px) and (min-width: 450px) {
+  header {
+    height: 60px;
+  }
+
+  .extract-container-step-bar {
+    display: none;
+  }
+
+  #logoPrincipal {
+    height: 23px;
+  }
+
+  .tituloFormulario {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .dadosPrincipais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .components-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    width: 447.26px;
+    height: 2px;
+    margin: 8px 0 20px 0;
+  }
+
+  .clientData,
+  .vehiclesForm,
+  .dataAddress,
+  .perguntaResponsavelServico {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .inputModeloEscrever {
+    width: 100%;
+    max-width: 450px;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscrever::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  .inputModeloEscreverSelect {
+    background-color: rgb(255, 255, 255);
+    max-width: 450px;
+    padding: 727171;
+    color: #b5b5b5;
+    height: 37px;
+  }
+
+  .inputModeloEscreverNo {
+    width: 100%;
+    max-width: 346px;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscreverNo::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  #Name,
+  #nameRecived {
+    background-image: url('../media/User.svg');
+  }
+
+  #Phone,
+  #phoneRecived {
+    background-image: url('../media/Cell\ Phone.svg');
+  }
+
+  #cpfCnpj {
+    background-image: url('../media/Name\ Tag\ Woman\ Horizontal.svg');
+  }
+
+  #Email {
+    background-image: url('../media/Secured\ Letter.svg');
+  }
+
+  #placa {
+    background-image: url('../media/ABC.svg');
+  }
+
+  #price {
+    background-image: url('../media/Cheap\ 2.svg');
+  }
+
+  #brand {
+    background-image: url('../media/Steering\ Wheel.svg');
+  }
+
+  #modelCar {
+    background-image: url('../media/Carpool.svg');
+  }
+
+  #yearCar {
+    background-image: url('../media/2017.svg');
+  }
+  #cep {
+    background-image: url('../media/Search.svg');
+  }
+
+  #Name,
+  #nameRecived,
+  #Phone,
+  #phoneRecived,
+  #cpfCnpj,
+  #Email,
+  #placa,
+  #price,
+  #brand,
+  #modelCar,
+  #yearCar,
+  #cep {
+    background-size: 20px;
+  }
+
+  #sameClient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sameClient > p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  #sameClient > div {
+    width: 100%;
+    padding-top: 14px;
+  }
+
+  #sameClient > div > span {
+    margin: auto 20px 0 0;
+    color: var(--color3);
+  }
+
+  #sameClient #yes {
+    background-color: red;
+  }
+
+  .bottom-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+    gap: 30px;
+  }
+
+  .bottom-buttons-container button {
+    height: 35px;
+    width: 210px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+
+  .bottom-buttons-container button:disabled {
+    background-color: var(--color11);
+    background-color: #b5b5b5;
+  }
+
+  .next-step {
+    background-color: var(--color1);
+    color: var(--color10);
+  }
+
+  .back-step {
+    background-color: var(--color11);
+    color: var(--color5);
+  }
+
+  .platePrice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .platePrice > span {
+    width: 210px;
+  }
+
+  .platePrice input {
+    width: 99%;
+  }
+
+  .fipe-container {
+    width: 100%;
+  }
+  .fipe-container select {
+    width: 100%;
+    color: #727171;
+  }
+
+  #accept-terms {
+    font-size: 13px;
+  }
+
+  .obsTextArea {
+    width: 100%;
+    max-width: 450px;
+    border: solid 1px var(--color10);
+    box-sizing: border-box;
+    height: 70px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .obsTextArea2 {
+    height: 191px;
+    width: 450px;
+    max-width: 450px;
+    text-align: center;
+    resize: none;
+    border: none;
+  }
+
+  .serviceTerms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .camposDivididos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    gap: 30px;
+  }
+
+  .camposDivididos > span {
+    width: 210px;
+  }
+
+  .whithoutIndent {
+    text-indent: 10px;
+  }
+
+  .moreInfo {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .extract-summary-container {
+    width: 450px;
+    border: 1px solid var(--color10);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 25px 10px;
+  }
+
+  #steps-bar > p {
+    width: 449px;
+  }
+  .extract-summary-container div span {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extract-summary-container div span em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .extract-summary-container div span strong,
+  .extract-summary-container div ul {
+    color: var(--color5);
+  }
+  .total {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: var(--color1);
+    border: 1px solid var(--color10);
+    border-radius: 3px;
+    padding: 15px 10px;
+  }
+
+  .total em {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .yes-no-container {
+    font-size: 12px;
+    text-align: initial;
+  }
+
+  #justify-rigth {
+    text-align: left;
+  }
+}
+/* Fim Tablet */
+
+/* Tela Desktop */
+@media screen and (min-width: 1018px) {
+  header {
+    height: 60px;
+  }
+
+  .extract-no-desktop {
+    display: none;
+  }
+
+  .components-extract-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #justify-rigth {
+    text-align: left;
+  }
+
+  .fixed-container {
+    margin-right: 160px;
+  }
+
+  #logoPrincipal {
+    height: 23px;
+    justify-content: space-between;
+  }
+
+  .tituloFormulario {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .dadosPrincipais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .components-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    width: 410px;
+    height: 2px;
+    margin: 8px 0 20px 0;
+  }
+
+  .clientData,
+  .vehiclesForm,
+  .dataAddress,
+  .perguntaResponsavelServico {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  #steps-bar {
+    width: 980px;
+  }
+
+  #steps-bar > p {
+    width: 410px;
+  }
+
+  .inputModeloEscrever {
+    width: 100%;
+    max-width: 410px;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscrever::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  .inputModeloEscreverSelect {
+    background-color: rgb(255, 255, 255);
+    max-width: 410px;
+    padding: 727171;
+    color: #b5b5b5;
+    height: 37px;
+  }
+
+  .inputModeloEscreverNo {
+    width: 100%;
+    max-width: 346px;
+    border: solid 1px var(--color10);
+    height: 35px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .inputModeloEscreverNo::placeholder {
+    color: #727171;
+    font-style: var(--font-main);
+    font-size: 12px;
+  }
+
+  #Name,
+  #nameRecived {
+    background-image: url('../media/User.svg');
+  }
+
+  #Phone,
+  #phoneRecived {
+    background-image: url('../media/Cell\ Phone.svg');
+  }
+
+  #cpfCnpj {
+    background-image: url('../media/Name\ Tag\ Woman\ Horizontal.svg');
+  }
+
+  #Email {
+    background-image: url('../media/Secured\ Letter.svg');
+  }
+
+  #placa {
+    background-image: url('../media/ABC.svg');
+  }
+
+  #price {
+    background-image: url('../media/Cheap\ 2.svg');
+  }
+
+  #brand {
+    background-image: url('../media/Steering\ Wheel.svg');
+  }
+
+  #modelCar {
+    background-image: url('../media/Carpool.svg');
+  }
+
+  #yearCar {
+    background-image: url('../media/2017.svg');
+  }
+  #cep {
+    background-image: url('../media/Search.svg');
+  }
+
+  #Name,
+  #nameRecived,
+  #Phone,
+  #phoneRecived,
+  #cpfCnpj,
+  #Email,
+  #placa,
+  #price,
+  #brand,
+  #modelCar,
+  #yearCar,
+  #cep {
+    background-size: 20px;
+  }
+
+  #sameClient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sameClient > p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  #sameClient > div {
+    width: 100%;
+    padding-top: 14px;
+    text-align: initial;
+  }
+
+  #sameClient > div > span {
+    margin: auto 20px 0 0;
+    color: var(--color3);
+  }
+
+  #sameClient #yes {
+    background-color: red;
+  }
+
+  .bottom-buttons-container {
+    width: 410px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+    gap: 30px;
+  }
+
+  .bottom-buttons-container button {
+    height: 35px;
+    width: 205px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+
+  .bottom-buttons-container button:disabled {
+    background-color: var(--color11);
+    background-color: #b5b5b5;
+  }
+
+  .next-step {
+    background-color: var(--color1);
+    color: var(--color10);
+  }
+  .back-step {
+    background-color: var(--color11);
+    color: var(--color5);
+  }
+
+  .platePrice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .platePrice > span {
+    width: 191.33px;
+  }
+
+  .platePrice input {
+    width: 99%;
+  }
+
+  .fipe-container {
+    width: 100%;
+  }
+  .fipe-container select {
+    width: 100%;
+    color: #727171;
+  }
+
+  #accept-terms {
+    font-size: 14.4px;
+    text-align: justify;
+  }
+
+  .obsTextArea {
+    width: 100%;
+    max-width: 410px;
+    border: solid 1px var(--color10);
+    box-sizing: border-box;
+    height: 70px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-indent: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .obsTextArea2 {
+    height: 191px;
+    width: 410px;
+    max-width: 410px;
+    text-align: center;
+    border: none;
+    resize: none;
+  }
+
+  .serviceTerms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .camposDivididos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 410px;
+    gap: 30px;
+  }
+
+  .camposDivididos > span {
+    width: 191.33px;
+  }
+
+  .whithoutIndent {
+    text-indent: 10px;
+  }
+
+  .moreInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .extract-summary-container {
+    width: 410px;
+    border: 1px solid var(--color10);
+    border-radius: 3px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+  }
+
+  .extract-summary-container div span {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extract-summary-container div span em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .extract-summary-container div span strong,
+  .extract-summary-container div ul {
+    color: var(--color5);
+  }
+  .total {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 410px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color1);
+    border: 1px solid var(--color10);
+    border-radius: 3px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+  }
+
+  .total em {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .yes-no-container {
+    font-size: 12px;
+  }
+
+  .fixed-div {
+    width: 980px;
+  }
+}
+
+/* Fim Desktop */

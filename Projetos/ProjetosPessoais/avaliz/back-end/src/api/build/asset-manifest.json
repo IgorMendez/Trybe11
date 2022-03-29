@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a7aea52.css",
+    "main.js": "/static/js/main.90f08e78.js",
+    "static/media/steps.png": "/static/media/steps.672e4344abf982cac017.png",
+    "static/media/Logo1.png.webp": "/static/media/Logo1.png.876f31dca2d249cb24f1.webp",
+    "static/media/ABC.svg": "/static/media/ABC.bc96f5ee7847b37f02b3.svg",
+    "static/media/Cheap 2.svg": "/static/media/Cheap 2.70e460596376a753b13e.svg",
+    "static/media/2017.svg": "/static/media/2017.079d72ebe3c023b77209.svg",
+    "static/media/Steering Wheel.svg": "/static/media/Steering Wheel.507fe3c37535214826be.svg",
+    "static/media/Name Tag Woman Horizontal.svg": "/static/media/Name Tag Woman Horizontal.1dcc0278e09858dc3e66.svg",
+    "static/media/Carpool.svg": "/static/media/Carpool.95efc9515185fed1d897.svg",
+    "static/media/Search.svg": "/static/media/Search.973676fa14c6cef2d22f.svg",
+    "index.html": "/index.html",
+    "static/media/Secured Letter.svg": "/static/media/Secured Letter.0cd139d20267cfbee3f2.svg",
+    "static/media/User.svg": "/static/media/User.867024444ed357a64d8b.svg",
+    "static/media/Cell Phone.svg": "/static/media/Cell Phone.2c7ad033e98ee3561166.svg",
+    "main.7a7aea52.css.map": "/static/css/main.7a7aea52.css.map",
+    "main.90f08e78.js.map": "/static/js/main.90f08e78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a7aea52.css",
+    "static/js/main.90f08e78.js"
+  ]
+}
